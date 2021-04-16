@@ -11,7 +11,9 @@ iframe {
 .containerFotos img {
   width: 100%;
 }
-
+.containerFotos--foto{
+  transition: 1s;
+}
 .containerFotos img:hover {
   transform: scale(1.1);
 }

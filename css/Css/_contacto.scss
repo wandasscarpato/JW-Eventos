@@ -40,7 +40,7 @@
   .block-form__select {
     width: 95%;
   }
-  
+
   .block-form,
   .block-inferior {
     width: 30%;
@@ -113,8 +113,11 @@
 @media (min-width: 1200px){
     .block-form, .block-inferior {
         width: 30%;
-        margin: 0px 35% 0px 35%;
+        margin: 0px 35%;
         padding: 1rem;
+    }
+    .block-inferior{
+      margin-bottom: 2%;
     }
 }
  
