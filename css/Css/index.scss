@@ -1,5 +1,5 @@
 .body{
-    overflow: 0 !important;
+    overflow-x: 0 !important;
 }
 ul li {
     list-style: none;
@@ -28,7 +28,7 @@ ul li {
 .gridEventos div img:hover{
  filter: grayscale(0%);
  z-index: 70;
- transform: scale(1.1);
+ transform: scale(1.05);
 
 }
 
@@ -122,6 +122,9 @@ input{
         width: 175%;
         margin: -3.5rem;
     }
+    .txtSobreImg{
+        width: 100%;
+    }
   }
   @media (max-width: 768px) {
     header section img {
@@ -145,7 +148,9 @@ input{
         background-color: rgba(255, 255, 255, 0.767)
     }
         body{overflow-x: hidden !important;}
-
+    .txtSobreImg{
+            width: 100%;
+        }
   }
   @media (max-width: 1024px) {
     header section img{
@@ -155,7 +160,8 @@ input{
     footer .gridFooter{
         grid-template-columns: 50% 50%;
     }
-    body{overflow-x: hidden !important;}
+    body{
+        overflow-x: hidden !important;}
 
   }
   
@@ -185,4 +191,20 @@ h3 {
     width: 100%;
     text-align: center;
     justify-content: space-around;
+}
+img.imgint{
+    z-index: 0;
+}
+.intento{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    z-index: 5;
+}
+.txtSobreImg{
+    z-index: 5;
+    width: 43%;
+    color: white;
+    transition: 1s;
+    font-size: 3rem;
 }

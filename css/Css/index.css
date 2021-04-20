@@ -1,5 +1,5 @@
 .body {
-  overflow: 0 !important;
+  overflow-x: 0 !important;
 }
 
 ul li {
@@ -38,8 +38,8 @@ ul li {
   -webkit-filter: grayscale(0%);
           filter: grayscale(0%);
   z-index: 70;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 /*modal*/
@@ -154,6 +154,9 @@ input {
     width: 175%;
     margin: -3.5rem;
   }
+  .txtSobreImg {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -182,6 +185,9 @@ input {
   }
   body {
     overflow-x: hidden !important;
+  }
+  .txtSobreImg {
+    width: 100%;
   }
 }
 
@@ -235,5 +241,29 @@ h3 {
   text-align: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+img.imgint {
+  z-index: 0;
+}
+
+.intento {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  z-index: 5;
+}
+
+.txtSobreImg {
+  z-index: 5;
+  width: 43%;
+  color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+  font-size: 3rem;
 }
 /*# sourceMappingURL=index.css.map */
