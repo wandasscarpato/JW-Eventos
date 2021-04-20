@@ -38,66 +38,6 @@ nav ul li:hover {
   background-color: #f1c3cd;
 }
 
-footer {
-  list-style: none;
-  font-size: 1rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f8dade), to(#f1c3cd));
-  background-image: linear-gradient(#f8dade, #f1c3cd);
-  padding: 50px;
-  font-family: "Lora", "Helvetica", "Arial", sans-serif;
-  color: white;
-  margin: none;
-}
-
-.gridFooter {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 25% 25% 25% 25%;
-      grid-template-columns: 25% 25% 25% 25%;
-}
-
-footer a {
-  text-decoration: none;
-  color: #363636;
-}
-
-.redesSociales {
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.redesSociales i {
-  padding-left: 5px;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.redesSociales i:hover {
-  color: #eb6b86;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-}
-
-footer h3 {
-  margin-top: 20px;
-  font-size: 1.2rem;
-  color: #363636;
-  text-align: center;
-}
-
-footer ul li {
-  font-family: "Lora", "Helvetica", "Arial", sans-serif;
-  color: #2b2c2c;
-}
-
-.ordenFooter {
-  padding: 0;
-}
-
-.link--modif li a:hover {
-  color: #eb6b86;
-}
-
 /*contacto*/
 .block {
   text-align: center;
@@ -681,7 +621,7 @@ strong h2 {
   font-family: 'Dancing Script', cursive;
   text-align: center;
   font-size: 3rem;
-  background-image: url("/img/eventos.png");
+  background-image: url("JW-Eventos/img/eventos.png");
   padding: 1rem;
   margin-top: 0;
   margin-bottom: 0px;
@@ -778,5 +718,65 @@ ul li {
   font-size: 3rem;
   color: #ee90a483;
   padding: 6rem 0;
+}
+
+footer {
+  list-style: none;
+  font-size: 1rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f8dade), to(#f1c3cd));
+  background-image: linear-gradient(#f8dade, #f1c3cd);
+  padding: 50px;
+  font-family: "Lora", "Helvetica", "Arial", sans-serif;
+  color: white;
+  margin: none;
+}
+
+.gridFooter {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+}
+
+footer a {
+  text-decoration: none;
+  color: #363636;
+}
+
+.redesSociales {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.redesSociales i {
+  padding-left: 5px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.redesSociales i:hover {
+  color: #eb6b86;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+footer h3 {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #363636;
+  text-align: center;
+}
+
+footer ul li {
+  font-family: "Lora", "Helvetica", "Arial", sans-serif;
+  color: #2b2c2c;
+}
+
+.ordenFooter {
+  padding: 0;
+}
+
+.link--modif li a:hover {
+  color: #eb6b86;
 }
 /*# sourceMappingURL=estilo.css.map */
