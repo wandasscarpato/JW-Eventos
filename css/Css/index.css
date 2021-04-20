@@ -1,3 +1,7 @@
+.body {
+  overflow: 0 !important;
+}
+
 ul li {
   list-style: none;
   margin: 0;
@@ -176,6 +180,9 @@ input {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.767);
   }
+  body {
+    overflow-x: hidden !important;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -185,6 +192,9 @@ input {
   footer .gridFooter {
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
+  }
+  body {
+    overflow-x: hidden !important;
   }
 }
 
@@ -196,6 +206,9 @@ input {
 @media (min-width: 1200px) {
   h3 {
     font-size: 1rem;
+  }
+  body {
+    overflow-x: hidden !important;
   }
 }
 
@@ -222,5 +235,28 @@ h3 {
   text-align: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+img.imgint {
+  z-index: 0;
+}
+
+.intento {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  z-index: 5;
+}
+
+.txtSobreImg {
+  z-index: 5;
+  width: 43%;
+  color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 /*# sourceMappingURL=index.css.map */

@@ -40,10 +40,11 @@ nav ul li:hover {
 
 footer {
   list-style: none;
-  font-size: 15px;
+  font-size: 1rem;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f8dade), to(#f1c3cd));
   background-image: linear-gradient(#f8dade, #f1c3cd);
   padding: 50px;
+  font-family: "Lora", "Helvetica", "Arial", sans-serif;
   color: white;
   margin: none;
 }
@@ -61,7 +62,7 @@ footer a {
 }
 
 .redesSociales {
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -79,17 +80,22 @@ footer a {
 
 footer h3 {
   margin-top: 20px;
+  font-size: 1.2rem;
   color: #363636;
   text-align: center;
 }
 
 footer ul li {
-  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Lora", "Helvetica", "Arial", sans-serif;
   color: #2b2c2c;
 }
 
 .ordenFooter {
   padding: 0;
+}
+
+.link--modif li a:hover {
+  color: #eb6b86;
 }
 
 /*contacto*/
@@ -99,6 +105,7 @@ footer ul li {
 
 .block__titulo {
   padding-top: 1rem;
+  padding-bottom: 1rem;
   text-align: center;
   margin: 0px;
 }
@@ -195,14 +202,6 @@ h5 {
   font-size: 0.9rem;
 }
 
-@media (max-width: 480px) {
-  .block-form, .block-inferior {
-    width: 100%;
-    margin: 0px;
-    padding: 1rem;
-  }
-}
-
 @media (max-width: 768px) {
   .block-form, .block-inferior {
     width: 70%;
@@ -227,6 +226,14 @@ h5 {
   }
   .block-inferior {
     margin-bottom: 2%;
+  }
+}
+
+@media (max-width: 480px) {
+  .block-form, .block-inferior {
+    width: 100%;
+    margin: 0px;
+    padding: 1rem;
   }
 }
 
@@ -653,7 +660,7 @@ iframe {
 body {
   background-color: rgba(250, 215, 248, 0.055);
   font-family: 'Raleway', sans-serif;
-  overflow: auto;
+  overflow-x: hidden !important;
   margin: 0px;
 }
 
@@ -661,8 +668,12 @@ nav .multiple {
   width: 100%;
 }
 
-nav ul li, footer ul li {
-  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+nav ul li {
+  font-size: "Lora", "Helvetica", "Arial", sans-serif;
+}
+
+footer ul li {
+  font-size: "Lora", "Helvetica", "Arial", sans-serif;
 }
 
 strong h2 {
@@ -719,6 +730,7 @@ ul li {
 @media (min-width: 1200px) {
   .h3, h3 {
     font-size: 1rem;
+    overflow-x: hidden !important;
   }
 }
 

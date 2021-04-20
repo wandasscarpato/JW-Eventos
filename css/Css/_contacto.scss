@@ -4,6 +4,7 @@
   }
   .block__titulo {
     padding-top: $rem;
+    padding-bottom: $rem;
     text-align: center;
     margin: 0px;
   }
@@ -88,13 +89,7 @@
   }
   
 
-@media (max-width: 480px) {
-    .block-form, .block-inferior {
-        width: 100%;
-         margin: 0px;
-        padding: 1rem;
-    }
-  }
+
   @media (max-width: 768px) {
     .block-form, .block-inferior {
         width: 70%;
@@ -121,3 +116,10 @@
     }
 }
  
+@media (max-width: 480px) {
+  .block-form, .block-inferior {
+      width: 100%;
+       margin: 0px;
+      padding: 1rem;
+  }
+}

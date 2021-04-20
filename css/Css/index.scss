@@ -1,4 +1,6 @@
-
+.body{
+    overflow: 0 !important;
+}
 ul li {
     list-style: none;
     margin: 0;
@@ -142,6 +144,8 @@ input{
         width: 100%;
         background-color: rgba(255, 255, 255, 0.767)
     }
+        body{overflow-x: hidden !important;}
+
   }
   @media (max-width: 1024px) {
     header section img{
@@ -151,7 +155,10 @@ input{
     footer .gridFooter{
         grid-template-columns: 50% 50%;
     }
+    body{overflow-x: hidden !important;}
+
   }
+  
 .idk{
     animation: 3s linear 1s infinite running slidein;
 }
@@ -159,6 +166,8 @@ input{
     h3 {
         font-size: 1rem;
     }
+    body{overflow-x: hidden !important;}
+
 }
  
 h3 {
@@ -176,4 +185,19 @@ h3 {
     width: 100%;
     text-align: center;
     justify-content: space-around;
+}
+img.imgint{
+    z-index: 0;
+}
+.intento{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    z-index: 5;
+}
+.txtSobreImg{
+    z-index: 5;
+    width: 43%;
+    color: white;
+    transition: 1s;
 }

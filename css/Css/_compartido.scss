@@ -1,17 +1,33 @@
+
+$fuente:'Lora', 'Helvetica', 'Arial', sans-serif;
 body{
     background-color: rgba(250, 215, 248, 0.055); 
     font-family:'Raleway', sans-serif;
-    overflow: auto;
+    overflow-x: hidden !important;
     margin:0px
 }
-nav .multiple{
+nav {
+    .multiple{
     width: 100%;
+    }
 }
-nav ul li, footer ul li{
-    font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+nav{
+    ul{
+     li{
+        font-size: $fuente;
+     }
+    }
+}
+footer{
+    ul{
+        li{
+           font-size: $fuente;
+        }
+       }
    }
    
-   strong h2{
+   strong {
+    h2{
     font-weight: normal;
     font-family: 'Dancing Script', cursive;
     text-align: center;
@@ -20,6 +36,7 @@ nav ul li, footer ul li{
     padding: 1rem;
     margin-top: 0;
     margin-bottom: 0px;
+    }
 }
 
 .recuadroDerecha{
@@ -27,19 +44,29 @@ nav ul li, footer ul li{
     width: 20%;
 }
 
-li a:hover{
+li{
+    a:hover{
     color: black;
+    }
 }
-li a:active{
+li{
+    a:active{
     color: rgb(255, 255, 255);
+    }
 }
 
-.multiple ul {
+.multiple{
+    ul {
     position: absolute;
     display: none;
+    }
 }
-.multiple ul li{
-display: block;
+.multiple{
+    ul{
+        li{
+            display: block;
+        }
+    }
 }
 .multiple li:hover ul{
     display: block;
@@ -51,14 +78,18 @@ display: block;
     padding: 0;
     margin-top: 0.3%;
 }
-ul li {
+ul{
+    li {
     list-style: none;
     margin: 0;
     text-align: center;
+    }
 }
 @media (min-width: 1200px){
  .h3, h3 {
      font-size: 1rem; 
+     overflow-x: hidden !important;
+
 }
 }
 
