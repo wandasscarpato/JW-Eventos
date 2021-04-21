@@ -231,10 +231,6 @@ h5 {
   }
 }
 
-section {
-  text-align: center;
-}
-
 section p {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
@@ -531,6 +527,10 @@ iframe {
           transform: scale(1.1);
 }
 
+.-modif-s {
+  font-size: 34px;
+}
+
 /*-----*/
 @media (min-width: 1200px) {
   section h2 {
@@ -772,5 +772,261 @@ ul li {
   font-size: 3rem;
   color: #ee90a483;
   padding: 6rem 0;
+}
+
+ul li {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+}
+
+.slideBos {
+  max-width: 90% !important;
+  margin: 0px auto;
+  margin-bottom: 1%;
+}
+
+/*secciones*/
+.gridEventos {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-grid-columns: 45% 45%;
+      grid-template-columns: 45% 45%;
+  margin: 0% 2.5%;
+  margin-bottom: 2rem;
+}
+
+.gridEventos div img {
+  width: 100%;
+  -webkit-filter: grayscale(90%);
+          filter: grayscale(90%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.gridEventos div img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  z-index: 70;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+/*modal*/
+.modal {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.657);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: modal 2s;
+          animation: modal 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.contenido {
+  margin: auto;
+  width: 40%;
+  height: 40%;
+}
+
+.modal img {
+  width: 100%;
+}
+
+#cerrar + label {
+  position: fixed;
+  color: black;
+  font-size: 25px;
+  z-index: 50;
+  background: #d49ed2;
+  width: 2%;
+  right: 5rem;
+  top: 5rem;
+  cursor: pointer;
+  -webkit-animation: modal 4s;
+          animation: modal 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  visibility: hidden;
+  opacity: 0;
+}
+
+@-webkit-keyframes modal {
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes modal {
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+#cerrar:checked + label, #cerrar:checked ~ .modal {
+  display: none;
+}
+
+input {
+  opacity: 0;
+  position: absolute;
+}
+
+.corp:hover {
+  z-index: 2;
+}
+
+/*-----*/
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+  header section img {
+    width: 30%;
+  }
+  .multiple {
+    display: -ms-grid;
+    display: grid;
+  }
+  .gridEventos {
+    -ms-grid-columns: 90%;
+        grid-template-columns: 90%;
+  }
+  .gridEventos div {
+    margin-bottom: 1rem;
+  }
+  .slider img {
+    height: 250px;
+  }
+  footer .gridFooter {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .multiple li:hover ul {
+    display: block;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.767);
+  }
+  .breadc {
+    font-size: 10px;
+  }
+  .modal img {
+    width: 175%;
+    margin: -3.5rem;
+  }
+  .txtSobreImg {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  header section img {
+    width: 20%;
+  }
+  .multiple {
+    display: -ms-grid;
+    display: grid;
+  }
+  .gridEventos {
+    -ms-grid-columns: 90%;
+        grid-template-columns: 90%;
+  }
+  .gridEventos div {
+    margin-bottom: 1rem;
+  }
+  footer .gridFooter {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  .multiple li:hover ul {
+    display: block;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.767);
+  }
+  .txtSobreImg {
+    width: 100%;
+  }
+}
+
+.idk {
+  -webkit-animation: 3s linear 1s infinite running slidein;
+          animation: 3s linear 1s infinite running slidein;
+}
+
+@media (min-width: 1200px) {
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  header section img {
+    width: 15%;
+  }
+  footer .gridFooter {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+.containerGridCovid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.containerGridCovid2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
+}
+
+.containerGridCovid2 div, .containerGridCovid div {
+  width: 100%;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+img.imgint {
+  z-index: 0;
+}
+
+.intento {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  z-index: 5;
+}
+
+.txtSobreImg {
+  z-index: 5;
+  width: 43%;
+  color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+  font-size: 3rem;
 }
 /*# sourceMappingURL=estilo.css.map */
