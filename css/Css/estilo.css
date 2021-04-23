@@ -343,6 +343,7 @@ a.btn.btn-primary {
   background-color: whitesmoke;
   text-align: center;
   padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 .block-grid__staff__img {
