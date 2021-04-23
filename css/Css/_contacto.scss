@@ -23,10 +23,12 @@
     color: $colorSecundario;
     padding: $rem/2;
     font-size: $rem;
-    width: 95%;
+    width: 100%;
     margin-bottom: $rem;
   }
-  
+  .block-form__botones{
+    text-align: center;
+  }
   .block-form,
   .block-form__select,
   .input {
@@ -34,20 +36,28 @@
     font-size: $rem;
   }
   .contacto {
+    label{
+      text-align: center;
+      width: 100%;
+    }
     input{
     opacity: 1 !important;
     position: relative !important;
   }
 }
+
   .block-form__botones--modificar {
     width: 49%;
     height: 40px;
     display: inline-table;
   }
-  .block-form__select {
-    width: 95%;
+  .textarea.block-form__datos-textarea{
+    width: 100%;
   }
-
+  .block-form__select {
+    width: 100%;
+  }
+//bloque inferior gris
   .block-form,
   .block-inferior {
     width: 30%;
@@ -95,13 +105,7 @@
   }
   
 
-@media (max-width: 480px) {
-    .block-form, .block-inferior {
-        width: 100%;
-         margin: 0px;
-        padding: 1rem;
-    }
-  }
+/*Arrancan las medias*/
   @media (max-width: 768px) {
     .block-form, .block-inferior {
         width: 70%;
@@ -127,4 +131,10 @@
       margin-bottom: 2%;
     }
 }
- 
+@media (max-width: 480px) {
+  .block-form, .block-inferior {
+      width: 100%;
+       margin: 0px;
+      padding: 1rem;
+  }
+}

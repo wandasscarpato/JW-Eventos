@@ -4,22 +4,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Estilos-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/Css/compartido.css" />
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/Css/estilo.css" />
+  <!--Fuentes-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <!--Key-->
   <title>Contacto</title>
   <link rel="shortcut icon" href="./img/logo.png" />
 </head>
 
 <body>
   <header>
-    
+    <!--header-->
     <section>
       <a href="index.html">
         <img src="./img/logo.png" />
@@ -39,29 +41,28 @@
             </li>
           </ul>
         </li>
-
         <li><a href="fotos.html">Galeria de fotos</a></li>
         <li><a href="ubicacion.html">Ubicacion</a></li>
         <li>
-            <a href="#">JW</a>
-            <ul class="multipleN">
-              <li>
-                <a href="nosotros.html">Nosotros</a>
-              </li>
-              <li>
-                <a href="staff.html">Staff</a>
-              </li>
-            </ul>
-          </li>
+          <a href="#">JW</a>
+          <ul class="multipleN">
+            <li>
+              <a href="nosotros.html">Nosotros</a>
+            </li>
+            <li>
+              <a href="staff.html">Staff</a>
+            </li>
+          </ul>
+        </li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
   </header>
-
+  <!--fin header-->
   <section class="imagen-seleccionada">
-    <img id="imagen">
+    <img id="imagen" />
   </section>
-  
+  <!--footer-->
   <footer class="footer">
     <div class="gridFooter">
       <div>
@@ -76,16 +77,15 @@
           <li>Otros eventos</li>
         </ul>
       </div>
-
-      <div  class="efecto-url">
+      <div class="efecto-url">
         <h3>JW</h3>
         <ul class="ordenFooter link--modif">
           <li>
             <a href="tel:4445555"><i class="fas fa-phone-volume"></i>444-5555</a>
           </li>
           <li>
-            <a href="mailto:JW@eventos.org.ar"> <i class="far fa-envelope"></i> jw@eventos.org.ar</a>
-
+            <a href="mailto:JW@eventos.org.ar">
+              <i class="far fa-envelope"></i> jw@eventos.org.ar</a>
           </li>
           <li>
             <a><i class="fas fa-route"></i> Jeronimo Salguero
@@ -94,7 +94,6 @@
           </li>
         </ul>
       </div>
-
       <div class="efecto-url">
         <a href="contacto.html">
           <h3>Contacto</h3>
@@ -108,7 +107,6 @@
           </li>
         </ul>
       </div>
-
       <div class="efecto-url">
         <h3>Redes sociales</h3>
         <ul class="ordenFooter">
@@ -120,20 +118,20 @@
           </li>
         </ul>
       </div>
-
     </div>
   </footer>
 </body>
+<!--script imagen seleccionada url-->
 <script>
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
-    const imagenurl = urlParams.get('imagen');
-    if(imagenurl<0 || imagenurl>16){
-      window.location.href = "error.html"
-    }
-    else{
-      document.getElementById('imagen').src="./img/salon/"+imagenurl+".jpg"
-    }
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const imagenurl = urlParams.get("imagen");
+  if (imagenurl < 0 || imagenurl > 16) {
+    window.location.href = "error.html";
+  } else {
+    document.getElementById("imagen").src =
+      "./img/salon/" + imagenurl + ".jpg";
+  }
 </script>
 
 </html>

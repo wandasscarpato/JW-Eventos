@@ -127,8 +127,12 @@ input,
   color: #613d52af;
   padding: 0.5rem;
   font-size: 1rem;
-  width: 95%;
+  width: 100%;
   margin-bottom: 1rem;
+}
+
+.block-form__botones {
+  text-align: center;
 }
 
 .block-form,
@@ -136,6 +140,11 @@ input,
 .input {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
+}
+
+.contacto label {
+  text-align: center;
+  width: 100%;
 }
 
 .contacto input {
@@ -149,8 +158,12 @@ input,
   display: inline-table;
 }
 
+.textarea.block-form__datos-textarea {
+  width: 100%;
+}
+
 .block-form__select {
-  width: 95%;
+  width: 100%;
 }
 
 .block-form,
@@ -205,14 +218,7 @@ h5 {
   font-size: 0.9rem;
 }
 
-@media (max-width: 480px) {
-  .block-form, .block-inferior {
-    width: 100%;
-    margin: 0px;
-    padding: 1rem;
-  }
-}
-
+/*Arrancan las medias*/
 @media (max-width: 768px) {
   .block-form, .block-inferior {
     width: 70%;
@@ -237,6 +243,14 @@ h5 {
   }
   .block-inferior {
     margin-bottom: 2%;
+  }
+}
+
+@media (max-width: 480px) {
+  .block-form, .block-inferior {
+    width: 100%;
+    margin: 0px;
+    padding: 1rem;
   }
 }
 
