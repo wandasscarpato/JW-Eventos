@@ -19,7 +19,7 @@
   input,
   .block-form__select,
   .block-form__datos-textarea {
-    border: $formatoBordes;
+    border: $formatoBordes ;
     color: $colorSecundario;
     padding: $rem/2;
     font-size: $rem;
@@ -33,6 +33,12 @@
     font-family: $fuentePrincipal;
     font-size: $rem;
   }
+  .contacto {
+    input{
+    opacity: 1 !important;
+    position: relative !important;
+  }
+}
   .block-form__botones--modificar {
     width: 49%;
     height: 40px;

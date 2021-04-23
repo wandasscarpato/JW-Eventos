@@ -1,0 +1,32 @@
+.imagen-seleccionada{
+    text-align: center;
+}
+
+  @media (max-width: 1024px) {
+    .imagen-seleccionada{
+        #imagen{
+            width: 60%;
+        }
+    }
+  }
+  @media (max-width: 768px) {
+    .imagen-seleccionada{
+        #imagen{
+            width: 70%;
+        }
+    }
+  }
+  @media (max-width: 480px) {
+    .imagen-seleccionada{
+        #imagen{
+            width: 80%;
+        }
+    }
+  }
+  @media (min-width: 1200px){
+    .imagen-seleccionada{
+        #imagen{
+            width: 50%;
+        }
+    }
+  }

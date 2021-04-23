@@ -29,6 +29,9 @@
     padding-top: $rem * 2;
     padding-bottom: $rem * 2;
   }
+  .block-eventos__texto-titulo {
+    padding-top: 0px;
+  }
   .block-servicios {
     display: grid;
     grid-template-columns: 30% 50%;
@@ -37,20 +40,17 @@
     background-color: #a1858c1e;
     margin-bottom: $rem * 3;
   }
-  .block-eventos__texto-titulo {
-    padding-top: 0px;
-  }
+  
   .block-eventos__imagen-propiedades {
     width: 80%;
   }
   .block-eventos__imagen-propiedades:hover {
-    border-radius: 30px;
     transform: scale(1.1);
   }
   .-modif-s{
     font-size: 34px;
   }
-  /*-----*/
+  /*---Comienzan las medias--*/
   
   @media (min-width: 1200px) {
     section {

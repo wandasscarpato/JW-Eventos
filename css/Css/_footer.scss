@@ -24,6 +24,15 @@ footer a {
     padding-left: 5px;
     transition: 1s;
 }
+.efecto-url{
+    ul{
+        li{
+            a:hover{
+                color: #eb6b86;
+            }
+        }
+    }
+}
 .redesSociales i:hover{
     color: #eb6b86;
     transform: scale(1.5);
